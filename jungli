@@ -1,0 +1,42 @@
+javac -encoding UTF-8 B04.java
+
+git checkout -- 파일명  디렉토리 취소
+
+git checkout HEAD -- 파일명 스테이징 디렉터리 둘다 취소
+
+git reset 파일명 스테이징 취소
+
+
+reset   작업디렉터리     스테이징 에어리어     커밋네역
+--hard 	  취소 			취소		취소	
+--mixed   유지			유지		취소	
+--soft    유지			취소 		유지
+
+
+$ git reset --hard ORIG_HEAD
+HEAD is now at 105bfa9 복학여부 추가
+<<<<<<<<< 위의 명령어 실행취소
+
+
+git reset --hard HEAD~2
+
+최근 커밋 2개를 취소하고 작업디렉터리와 스테이징에어리아 커밋내역 모두취소
+
+git reset --hard HEAD~3
+
+3개취소후 디렉터리와 스테이징 에어리아는 유지 커밋내역만 취소
+
+git revert HEAD 
+
+지우는 이력을 commit한다
+
+git stash pop
+
+stash 하나를 꺼내면서 내꺼에 저장을하고 drop된다.
+
+git stash drop
+
+stash 하나를 드롭시킨다
+
+git stash list
+하나를 꺼내고 저장을한다. drop은 되지 않는다.
