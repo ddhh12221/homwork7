@@ -2,7 +2,7 @@ package homework5;
 
 
 import java.util.*;
-public class ExamForWhile {
+public class SumOfNumbers {
 	public void main (String[] args){
 		
 		Scanner s = new Scanner(System.in);
