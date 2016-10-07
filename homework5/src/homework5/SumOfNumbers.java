@@ -3,32 +3,22 @@ package homework5;
 
 import java.util.*;
 public class SumOfNumbers {
-	public void main (String[] args){
+	void input(){
 		
-		Scanner s = new Scanner(System.in);
+		while(Quit == "q"){
+			System.out.println("1부터 입력하신 수만큼 더해 구합니다.");
+			Scanner s = new Scanner(System.in);
+		
 		int i= s.nextInt();
-		if (i==1)
+		int v=0, a=0;
+		for( v=1; v<=i;i++)
 		{
-			new input().SumOfNumbers();
+			a=a+v;
 		}
-		else if (i==2)
-		{
-			new input().MaxAndMin();
-		}
-		else if (i==3)
-		{
-			new input().SumAndAvg();
-		}
-		else if (i==4)
-		{
-			new input().GuGuDan();
-		}
-		else if (i==5)
-		{
-			new input().GuGuDan2();
-		}
-
 		
+		System.out.println("총 합은 "+ a+"입니다.");
+		char c= s.next();
+		}
 	}
 	
 	

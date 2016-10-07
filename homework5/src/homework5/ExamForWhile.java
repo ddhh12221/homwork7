@@ -5,6 +5,8 @@ import java.util.*;
 public class ExamForWhile {
 	public void main (String[] args){
 		
+		while(i==6)
+		{
 		Scanner s = new Scanner(System.in);
 		int i= s.nextInt();
 		if (i==1)
@@ -27,6 +29,16 @@ public class ExamForWhile {
 		{
 			new input().GuGuDan2();
 		}
+		else if (i==6)
+		{
+			break;
+		}
+		else
+		{
+			continue;
+		}
+		}
+		
 
 		
 	}
