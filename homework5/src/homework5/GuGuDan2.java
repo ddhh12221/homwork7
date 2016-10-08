@@ -1,17 +1,16 @@
 package homework5;
 
+import java.util.Scanner;
 
-import java.util.*;
-public class SumOfNumbers {
+public class GuGuDan2 {
 	void input(){
-		
 		while(true){
 			System.out.println("1부터 입력하신 수만큼 더해 구합니다.");
 			Scanner s = new Scanner(System.in);
 		
 		int i= s.nextInt();
 		int v=0, a=0;
-		for( v=1; v<=i;v++)
+		for( v=1; v<=i;i++)
 		{
 			a=a+v;
 		}
@@ -24,5 +23,4 @@ public class SumOfNumbers {
 		}
 	}
 	}
-	
 }

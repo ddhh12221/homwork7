@@ -5,29 +5,29 @@ import java.util.*;
 public class ExamForWhile {
 	public void main (String[] args){
 		
-		while(i==6)
+		while(true)
 		{
 		Scanner s = new Scanner(System.in);
 		int i= s.nextInt();
 		if (i==1)
 		{
-			new input().SumOfNumbers();
+			new SumOfNumbers().input();
 		}
 		else if (i==2)
 		{
-			new input().MaxAndMin();
+			new MaxAndMin().input();
 		}
 		else if (i==3)
 		{
-			new input().SumAndAvg();
+			new SumAndAvg().input(); 
 		}
 		else if (i==4)
 		{
-			new input().GuGuDan();
+			new GuGuDan().input();
 		}
 		else if (i==5)
 		{
-			new input().GuGuDan2();
+			new GuGuDan2().input();	
 		}
 		else if (i==6)
 		{
