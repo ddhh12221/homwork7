@@ -3,24 +3,28 @@ package homework5;
 import java.util.Scanner;
 
 public class GuGuDan2 {
-	void input(){
-		while(true){
-			System.out.println("1부터 입력하신 수만큼 더해 구합니다.");
-			Scanner s = new Scanner(System.in);
-		
-		int i= s.nextInt();
-		int v=0, a=0;
-		for( v=1; v<=i;i++)
-		{
-			a=a+v;
-		}
-		
-		System.out.println("총 합은 "+ a+"입니다.");
-		String c= s.next();
-		if (c=="q")
-		{
-			break;
-		}
-	}
-	}
+    void input(){
+        String strData = "";
+        Scanner s = new Scanner(System.in);
+        while (true){
+            System.out.print("짝수단 : E 홀수단 : O (종료는 : Q)");
+            strData = s.next().trim().toLowerCase();
+            if("e".equals(strData)){
+                for(int i=2; i<=8; i=i+2){
+                    for(int j=1; j<=9; j++){
+                        System.out.println(i+"*"+j+"="+(i*j));
+                    }
+                }
+            }
+            else if("o".equals(strData)){
+                for(int i=1; i<=9; i=i+2){
+                    for(int j=1; j<=9; j++){
+                        System.out.println(i+"*"+j+"="+(i*j));
+                    }
+                }
+            }
+            else if("q".equals(strData)){ new ExamForWhile().start(); }
+            else { System.out.println("입력값 확인하세요."); }
+        }
+    }
 }

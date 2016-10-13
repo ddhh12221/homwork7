@@ -2,32 +2,31 @@ package homework5;
 
 import java.util.Scanner;
 
+
 public class GuGuDan {
-	void input(){
-		while(true){
-			System.out.println("출력하고 싶은 단(Q:종료) >>");
-			Scanner s = new Scanner(System.in);
-		
-		int i= s.nextInt();
-		if (i>1&&i<10)
-		{
-			for(int r=0; r<10;r++)
-			{
-				System.out.println("");
-			}
-		}
-		int v=0, a=0;
-		for( v=1; v<=i;i++)
-		{
-			a=a+v;
-		}
-		
-		System.out.println("총 합은 "+ a+"입니다.");
-		String c= s.next();
-		if (c=="q")
-		{
-			break;
-		}
-	}
-	}
+    void input(){
+        int iData = 1;
+        String strData = "";
+        Scanner s = new Scanner(System.in);
+        while (true){
+            try {
+                System.out.print("출력하고싶은 단 : (종료는 : Q)");
+                strData = s.next().trim().toLowerCase();
+                iData = Integer.parseInt(strData);
+                if(iData<=1 || iData>=10){
+                    System.out.println("잘못입력");
+                }
+                else {
+                    for(int i=1; i<=9; i++){
+                        System.out.println(iData + " * " + i + " = " + iData*i);
+                    }
+                }
+            }catch (NumberFormatException e){
+                if("q".equals(strData)){
+                    new ExamForWhile().start();
+                }
+                else System.out.println("입력값 확인하세요");
+            }
+        }
+    }
 }
