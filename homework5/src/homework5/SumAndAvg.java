@@ -12,19 +12,21 @@ public class SumAndAvg {
 		
 		
 		int c= s.nextInt();
-		
+		char l = s.next().charAt(0);
 		v=v+c;
-		i++;
+		++i;
 		
-		if(c=='q')
+		
+	     if(l=='q')
 		{
 			sum=v;
 			avg=v/i;
 			  System.out.print("합은" + sum + "이고,");
 			  System.out.println("평균은" + avg + "입니다.");
-			break;
+			  
+			  new ExamForWhile().start();
 		}
-		
+
 	}
 	}
 }
