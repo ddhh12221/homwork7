@@ -20,7 +20,7 @@ public class SumOfNumbers {
 		String c= s.next();
 		if (c=="q")
 		{
-			new ExamForWhile().start();
+			new ExamForWhileStars().start();
 		}
 	}
 	}
